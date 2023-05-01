@@ -13,6 +13,10 @@ import cv4.KvadratickaRovnice1;
 import cv4.KvadratickaRovnice2;
 import cv4.KvadratickaRovnice3;
 import cv6.CodeCleaner;
+import cv7.Vypocet_Histogram;
+import cv9.CalcFibonacci;
+
+import java.io.IOException;
 //import cv3.part2.Trojuhelnik;
 
 public class Main {
@@ -26,7 +30,7 @@ public class Main {
   static final Trojuhelnik tr2 = new Trojuhelnik(2.5, 4.6, 6.4);
   static final TrojuhelnikDouble trojuhelnikDouble = new TrojuhelnikDouble(tr1, tr2);
   static final TrojuhelnikDouble trojuhelnikDouble1 = new TrojuhelnikDouble(t1, t2);
-
+  static final CalcFibonacci fib = new CalcFibonacci();
     public static void main(String[] args) {
         cv1();
         cv3_part1();
@@ -35,6 +39,16 @@ public class Main {
         //cv6
         CodeCleaner c = new CodeCleaner();
         c.clean("Trojuhelnik.java","Trojuhelnik - final.java");
+        //cv7
+        String file = "src/main/resources/text.txt";
+        Vypocet_Histogram v = new Vypocet_Histogram();
+        v.hist("COCK");
+        try {
+            v.hist2(file);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        cv9();
     }
 
 
@@ -93,5 +107,11 @@ public class Main {
         new KvadratickaRovnice1(2,3,4);
         new KvadratickaRovnice2(2);
         new KvadratickaRovnice3();
+    }
+    public static void cv9(){
+        fib.Init();
+        System.out.println(fib.calcRec(12));
+        System.out.println(fib.calcRecTable(1));
+        System.out.println(fib.calcNonRec(9));
     }
 }
