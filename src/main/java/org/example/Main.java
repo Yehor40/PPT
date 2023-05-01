@@ -7,6 +7,9 @@ import cv1_2.Exceptions.PlnaNadrzException;
 import cv1_2.Exceptions.PrazdnaNadrzException;
 import cv1_2.Exceptions.PrekrocenLimitException;
 import cv1_2.Nadrz;
+import cv3.part1.Trojuhelnik;
+import cv3.part1.TrojuhelnikDouble;
+//import cv3.part2.Trojuhelnik;
 
 public class Main {
   static final  CalcFaktorial calcf1 = new CalcFaktorial();
@@ -42,6 +45,25 @@ public class Main {
         }
         System.out.println(nadrz.getKapacita()+"\n"+nadrz.getStav());
 
+        //cv3 part1
+        Trojuhelnik tr1 = new Trojuhelnik(0, 4.0, 5.0);
+        Trojuhelnik tr2 = new Trojuhelnik(2.5, 4.6, 6.4);
+        System.out.print(tr1.is_valid());
+        tr1.calc_obvod_a_obsah();
+        tr2.calc_obvod_a_obsah();
+
+        TrojuhelnikDouble trojuhelnikDouble = new TrojuhelnikDouble(tr1, tr2);
+        System.out.println(""+trojuhelnikDouble.toString());
+
+        //cv3 part2
+        Trojuhelnik t1 = new Trojuhelnik(16.0, 12.0, 20.0);
+        Trojuhelnik t2 = new Trojuhelnik(2.5, 4.6, 6.4);
+        System.out.println(t2.is_valid());
+        t1.calc_obvod_a_obsah();
+        t2.calc_obvod_a_obsah();
+        //tr1.setValueA(17);
+        TrojuhelnikDouble trojuhelnikDouble1 = new TrojuhelnikDouble(tr1, tr2);
+        System.out.println(""+trojuhelnikDouble1.toString());
     }
 
 
