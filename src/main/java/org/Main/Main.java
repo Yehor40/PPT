@@ -12,6 +12,7 @@ import cv3.part1.TrojuhelnikDouble;
 import cv4.KvadratickaRovnice1;
 import cv4.KvadratickaRovnice2;
 import cv4.KvadratickaRovnice3;
+import cv6.CodeCleaner;
 //import cv3.part2.Trojuhelnik;
 
 public class Main {
@@ -31,6 +32,9 @@ public class Main {
         cv3_part1();
         cv3_part2();
         cv4();
+        //cv6
+        CodeCleaner c = new CodeCleaner();
+        c.clean("Trojuhelnik.java","Trojuhelnik - final.java");
     }
 
 
