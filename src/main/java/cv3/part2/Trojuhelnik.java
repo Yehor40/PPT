@@ -36,7 +36,7 @@ public class Trojuhelnik {
  * @throws Throwable
  */
     @Override
-    protected void finalize() throws Throwable {
+    public void finalize() throws Throwable {
         super.finalize();
     }
 

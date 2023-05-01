@@ -4,6 +4,8 @@
  */
 package cv3.cv3.part2;
 
+import cv3.part2.NotTrojuhelnikException;
+import cv3.part2.Trojuhelnik;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -224,7 +226,7 @@ public class TrojuhelnikTest {
         Trojuhelnik instance = new Trojuhelnik(3.0, 4.0, 5.0);
         
         Exception exception;
-        exception = assertThrows(NotTrojuhelnikException.class, () -> {     
+        exception = assertThrows(NotTrojuhelnikException.class, () -> {
             instance.setValueA(a);
         });
 

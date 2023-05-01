@@ -17,6 +17,41 @@ public class Main {
   static final BankovniUcet ucet = new BankovniUcet(1000,200);
   static final Nadrz nadrz = new Nadrz(1000,100);
     public static void main(String[] args) {
+        cv1();
+        cv3_part1();
+        cv3_part2();
+    }
+
+
+   public static class ToolCisla {
+        public static int compare_int(int a, int b) {
+            if (a<b) return -1;
+            if (b<a) return +1;
+            else
+                return 0;
+        }
+    }
+    public static void cv3_part1(){
+        Trojuhelnik tr1 = new Trojuhelnik(0, 4.0, 5.0);
+        Trojuhelnik tr2 = new Trojuhelnik(2.5, 4.6, 6.4);
+        System.out.print(tr1.is_valid());
+        tr1.calc_obvod_a_obsah();
+        tr2.calc_obvod_a_obsah();
+
+        TrojuhelnikDouble trojuhelnikDouble = new TrojuhelnikDouble(tr1, tr2);
+        System.out.println(""+trojuhelnikDouble.toString());
+    }
+    public static void cv3_part2(){
+        Trojuhelnik t1 = new Trojuhelnik(16.0, 12.0, 20.0);
+        Trojuhelnik t2 = new Trojuhelnik(2.5, 4.6, 6.4);
+        System.out.println(t2.is_valid());
+        t1.calc_obvod_a_obsah();
+        t2.calc_obvod_a_obsah();
+        //tr1.setValueA(17);
+        TrojuhelnikDouble trojuhelnikDouble1 = new TrojuhelnikDouble(t1, t2);
+        System.out.println(""+trojuhelnikDouble1.toString());
+    }
+    public static void cv1() {
         calcf1.calc1(6);
         calcf2.calc2(9);
         try {
@@ -45,34 +80,5 @@ public class Main {
         }
         System.out.println(nadrz.getKapacita()+"\n"+nadrz.getStav());
 
-        //cv3 part1
-        Trojuhelnik tr1 = new Trojuhelnik(0, 4.0, 5.0);
-        Trojuhelnik tr2 = new Trojuhelnik(2.5, 4.6, 6.4);
-        System.out.print(tr1.is_valid());
-        tr1.calc_obvod_a_obsah();
-        tr2.calc_obvod_a_obsah();
-
-        TrojuhelnikDouble trojuhelnikDouble = new TrojuhelnikDouble(tr1, tr2);
-        System.out.println(""+trojuhelnikDouble.toString());
-
-        //cv3 part2
-        Trojuhelnik t1 = new Trojuhelnik(16.0, 12.0, 20.0);
-        Trojuhelnik t2 = new Trojuhelnik(2.5, 4.6, 6.4);
-        System.out.println(t2.is_valid());
-        t1.calc_obvod_a_obsah();
-        t2.calc_obvod_a_obsah();
-        //tr1.setValueA(17);
-        TrojuhelnikDouble trojuhelnikDouble1 = new TrojuhelnikDouble(tr1, tr2);
-        System.out.println(""+trojuhelnikDouble1.toString());
-    }
-
-
-   public static class ToolCisla {
-        public static int compare_int(int a, int b) {
-            if (a<b) return -1;
-            if (b<a) return +1;
-            else
-                return 0;
-        }
     }
 }

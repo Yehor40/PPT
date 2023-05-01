@@ -26,15 +26,15 @@ public class TrojuhelnikDouble {
  /**
  * Metoda pro zjisteni mensiho trojuhelniku
  * @return vraci objekt(trojuhelnik) ktery je mensi
- */       
-    Trojuhelnik minObvod() {
+ */
+ public Trojuhelnik minObvod() {
         return tr1.get_obvod() < tr2.get_obvod() ? tr1 : tr2;        
     }
 /**
  * Metoda pro zjisteni, zda jsou objekty stejne 
  * @return vraci bud true nebo false
- */   
-    boolean are_equals() {
+ */
+public boolean are_equals() {
         return tr1.equals(tr2);
     }
         
@@ -43,7 +43,7 @@ public class TrojuhelnikDouble {
  * @throws Throwable
  */
     @Override
-    protected void finalize() throws Throwable {
+    public void finalize() throws Throwable {
         super.finalize();
         tr1.finalize();
         tr1 = null;

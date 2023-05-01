@@ -17,17 +17,17 @@ public class TrojuhelnikDouble {
     }
     
 
-    Trojuhelnik minObvod() {
+    public Trojuhelnik minObvod() {
         return tr1.get_obvod() < tr2.get_obvod() ? tr1 : tr2;        
     }
 
-    boolean are_equals() {
+    public boolean are_equals() {
         return tr1.equals(tr2);
     }
         
 
     @Override
-    protected void finalize() throws Throwable {
+    public void finalize() throws Throwable {
         super.finalize();
         tr1.finalize();
         tr1 = null;

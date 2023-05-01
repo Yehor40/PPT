@@ -4,6 +4,8 @@
  */
 package cv3.cv3.part2;
 
+import cv3.part2.Trojuhelnik;
+import cv3.part2.TrojuhelnikDouble;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
