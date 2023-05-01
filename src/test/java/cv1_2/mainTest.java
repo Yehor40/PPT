@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 import cv1_2.Exceptions.FaktorialException;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import org.example.Main.*;
+import org.Main.Main.*;
 
 public class mainTest {
     

@@ -2,7 +2,7 @@ package cv1_2;
 
 import cv1_2.Exceptions.FaktorialException;
 
-import static org.example.Main.ToolCisla.compare_int;
+import static org.Main.Main.ToolCisla.compare_int;
 
 public class CalcFaktorial {
     public  int calc1(int c) {

@@ -1,4 +1,4 @@
-package org.example;
+package org.Main;
 
 import cv1_2.BankovniUcet;
 import cv1_2.CalcFaktorial;
@@ -9,6 +9,9 @@ import cv1_2.Exceptions.PrekrocenLimitException;
 import cv1_2.Nadrz;
 import cv3.part1.Trojuhelnik;
 import cv3.part1.TrojuhelnikDouble;
+import cv4.KvadratickaRovnice1;
+import cv4.KvadratickaRovnice2;
+import cv4.KvadratickaRovnice3;
 //import cv3.part2.Trojuhelnik;
 
 public class Main {
@@ -16,10 +19,18 @@ public class Main {
   static final  CalcFaktorial calcf2 = new CalcFaktorial();
   static final BankovniUcet ucet = new BankovniUcet(1000,200);
   static final Nadrz nadrz = new Nadrz(1000,100);
+  static final  Trojuhelnik t1 = new Trojuhelnik(16.0, 12.0, 20.0);
+  static final Trojuhelnik t2 = new Trojuhelnik(2.5, 4.6, 6.4);
+  static final  Trojuhelnik tr1 = new Trojuhelnik(0, 4.0, 5.0);
+  static final Trojuhelnik tr2 = new Trojuhelnik(2.5, 4.6, 6.4);
+  static final TrojuhelnikDouble trojuhelnikDouble = new TrojuhelnikDouble(tr1, tr2);
+  static final TrojuhelnikDouble trojuhelnikDouble1 = new TrojuhelnikDouble(t1, t2);
+
     public static void main(String[] args) {
         cv1();
         cv3_part1();
         cv3_part2();
+        cv4();
     }
 
 
@@ -32,23 +43,16 @@ public class Main {
         }
     }
     public static void cv3_part1(){
-        Trojuhelnik tr1 = new Trojuhelnik(0, 4.0, 5.0);
-        Trojuhelnik tr2 = new Trojuhelnik(2.5, 4.6, 6.4);
         System.out.print(tr1.is_valid());
         tr1.calc_obvod_a_obsah();
         tr2.calc_obvod_a_obsah();
-
-        TrojuhelnikDouble trojuhelnikDouble = new TrojuhelnikDouble(tr1, tr2);
         System.out.println(""+trojuhelnikDouble.toString());
     }
     public static void cv3_part2(){
-        Trojuhelnik t1 = new Trojuhelnik(16.0, 12.0, 20.0);
-        Trojuhelnik t2 = new Trojuhelnik(2.5, 4.6, 6.4);
         System.out.println(t2.is_valid());
         t1.calc_obvod_a_obsah();
         t2.calc_obvod_a_obsah();
         //tr1.setValueA(17);
-        TrojuhelnikDouble trojuhelnikDouble1 = new TrojuhelnikDouble(t1, t2);
         System.out.println(""+trojuhelnikDouble1.toString());
     }
     public static void cv1() {
@@ -80,5 +84,10 @@ public class Main {
         }
         System.out.println(nadrz.getKapacita()+"\n"+nadrz.getStav());
 
+    }
+    public static void cv4(){
+        new KvadratickaRovnice1(2,3,4);
+        new KvadratickaRovnice2(2);
+        new KvadratickaRovnice3();
     }
 }
