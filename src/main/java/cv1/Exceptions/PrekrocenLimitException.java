@@ -1,4 +1,4 @@
-package cv1_2.Exceptions;
+package cv1.Exceptions;
 /**
  *
  * @author Alisher

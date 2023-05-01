@@ -2,12 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit4TestClass.java to edit this template
  */
-package cv1_2;
+package cv1;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import cv1_2.Exceptions.FaktorialException;
+import cv1.Exceptions.FaktorialException;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.Main.Main.*;

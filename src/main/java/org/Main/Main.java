@@ -1,12 +1,12 @@
 package org.Main;
 
-import cv1_2.BankovniUcet;
-import cv1_2.CalcFaktorial;
-import cv1_2.Exceptions.NedostatekProstredkuException;
-import cv1_2.Exceptions.PlnaNadrzException;
-import cv1_2.Exceptions.PrazdnaNadrzException;
-import cv1_2.Exceptions.PrekrocenLimitException;
-import cv1_2.Nadrz;
+import cv1.BankovniUcet;
+import cv1.CalcFaktorial;
+import cv1.Exceptions.NedostatekProstredkuException;
+import cv1.Exceptions.PlnaNadrzException;
+import cv1.Exceptions.PrazdnaNadrzException;
+import cv1.Exceptions.PrekrocenLimitException;
+import cv1.Nadrz;
 import cv3.part1.Trojuhelnik;
 import cv3.part1.TrojuhelnikDouble;
 import cv4.KvadratickaRovnice1;

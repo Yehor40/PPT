@@ -1,7 +1,7 @@
-package cv1_2;
+package cv1;
 
-import cv1_2.Exceptions.NedostatekProstredkuException;
-import cv1_2.Exceptions.PrekrocenLimitException;
+import cv1.Exceptions.NedostatekProstredkuException;
+import cv1.Exceptions.PrekrocenLimitException;
 
 import java.util.ArrayList;
 import java.util.Date;

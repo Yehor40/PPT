@@ -1,4 +1,4 @@
-package cv1_2;
+package cv1;
 
 import java.util.List;
 @SuppressWarnings("all")

@@ -1,7 +1,7 @@
-package cv1_2;
+package cv1;
 
-import cv1_2.Exceptions.PlnaNadrzException;
-import cv1_2.Exceptions.PrazdnaNadrzException;
+import cv1.Exceptions.PlnaNadrzException;
+import cv1.Exceptions.PrazdnaNadrzException;
 
 public class Nadrz {
     private int kapacita ;

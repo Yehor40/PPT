@@ -1,6 +1,6 @@
-package cv1_2;
+package cv1;
 
-import cv1_2.Exceptions.FaktorialException;
+import cv1.Exceptions.FaktorialException;
 
 import static org.Main.Main.ToolCisla.compare_int;
 
