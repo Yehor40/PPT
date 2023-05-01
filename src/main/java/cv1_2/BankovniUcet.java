@@ -27,16 +27,17 @@ public class BankovniUcet {
     }
 
     public void vyber(int castka) throws NedostatekProstredkuException, PrekrocenLimitException {
-        if (castka > this.aktualniStav) {
-            throw new NedostatekProstredkuException("Na účtu není dostatek peněz");
-        }
+            if (castka > this.aktualniStav) {
+                throw new NedostatekProstredkuException("Na účtu není dostatek peněz");
+            }
 
-        if (!this.nastaveni.verifyDenniLimit(castka, this.getHistorieVyberu())) {
-            throw new PrekrocenLimitException("Byl překročen denní limit výběru");
-        }
+            if (!this.nastaveni.verifyDenniLimit(castka, this.getHistorieVyberu())) {
+                throw new PrekrocenLimitException("Byl překročen denní limit výběru");
+            }
 
-        this.aktualniStav -= castka;
-        this.historieVyberu.add(new Vyber(new Date(), castka));
+            this.aktualniStav -= castka;
+            this.historieVyberu.add(new Vyber(new Date(), castka));
+
     }
 
     public List<Vklad> getHistorieVkladu() {
