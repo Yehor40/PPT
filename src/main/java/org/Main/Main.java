@@ -17,6 +17,7 @@ import cv7.Vypocet_Histogram;
 import cv9.CalcFibonacci;
 
 import java.io.IOException;
+import java.util.Scanner;
 //import cv3.part2.Trojuhelnik;
 
 public class Main {
@@ -32,23 +33,63 @@ public class Main {
   static final TrojuhelnikDouble trojuhelnikDouble1 = new TrojuhelnikDouble(t1, t2);
   static final CalcFibonacci fib = new CalcFibonacci();
     public static void main(String[] args) {
-        cv1();
-        cv3_part1();
-        cv3_part2();
-        cv4();
-        //cv6
-        CodeCleaner c = new CodeCleaner();
-        c.clean("Trojuhelnik.java","Trojuhelnik - final.java");
-        //cv7
-        String file = "src/main/resources/text.txt";
-        Vypocet_Histogram v = new Vypocet_Histogram();
-        v.hist("COCK");
-        try {
-            v.hist2(file);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+
+       
+        String s ="";
+        while(true){
+            System.out.println("Pro spusteni nejakeho ukole zvolte cislo od 1 do 9,pro zastaveni zmacknete 'q'");
+            Scanner sc = new Scanner(System.in);
+            s =sc.nextLine();
+        switch (s){
+
+
+        case "1":
+            cv1();
+        break;
+                case "2":
+                    System.out.println("nenaimplementovano");
+                    break;
+            case "3":
+                cv3_part1();
+                try {
+                    Thread.sleep(250);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                cv3_part2();
+                break;
+            case "4":
+                cv4();
+                break;
+            case "5":
+                System.out.println("nenaimplementovano");
+                break;
+            case "6":
+                CodeCleaner c = new CodeCleaner();
+                c.clean("Trojuhelnik.java","Trojuhelnik - final.java");
+                break;
+            case "7":
+                String file = "src/main/resources/text.txt";
+                Vypocet_Histogram v = new Vypocet_Histogram();
+                v.hist("COCK");
+                try {
+                    v.hist2(file);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+                break;
+            case "8":
+                System.out.println("nenaimplementovano");
+                break;
+            case "9":
+                cv9();
+                break;
+            case"Q":System.exit(0);
+            break;
+            case"q":System.exit(0);
+                break;
         }
-        cv9();
+        }
     }
 
 
