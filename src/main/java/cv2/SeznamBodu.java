@@ -29,8 +29,7 @@ class SeznamBodu {
     }
 
     public IPoint getBod(int index) {
-        // TODO - add OR or AND in if condition
-        if (index < 0  || index >= pocetBodu) {
+        if (index < 0  && index >= pocetBodu) {
             return null; // Neplatný index
         }
 
@@ -38,8 +37,7 @@ class SeznamBodu {
     }
 
     public void posunBodu(int index, double dx, double dy) {
-        // TODO - add OR or AND in if condition
-        if (index < 0 || index >= pocetBodu) {
+        if (index < 0 && index >= pocetBodu) {
             return; // Neplatný index
         }
 
