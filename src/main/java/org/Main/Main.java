@@ -31,7 +31,7 @@ public class Main {
                 menu.cv4();
                 break;
             case "5":
-                System.out.println("zatim nenaimplementovano");
+                menu.cv5();
                 break;
             case "6":
                menu.cv6();

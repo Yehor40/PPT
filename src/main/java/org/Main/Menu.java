@@ -22,6 +22,7 @@ import cv9.CalcFibonacci;
 
 //import java.awt.*;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Menu {
    // static final SeznamBodu sez = new SeznamBodu();
@@ -114,6 +115,38 @@ public class Menu {
         System.out.println(new KvadratickaRovnice1(2,3,4)); ;
         new KvadratickaRovnice2(2);
         new KvadratickaRovnice3();
+    }
+
+    public void cv5() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Výukový test - Odmocnina");
+        System.out.print("Zadejte číslo pro výpočet odmocniny: ");
+        double number = scanner.nextDouble();
+        double sqrtResult = Math.sqrt(number);
+        System.out.println("Výsledek: " + sqrtResult);
+
+        System.out.println("\nVýukový test - Goniometrické funkce");
+        System.out.print("Zadejte úhel v stupních: ");
+        double angle = scanner.nextDouble();
+        double radian = Math.toRadians(angle);
+        double sinResult = Math.sin(radian);
+        double tanResult = Math.tan(radian);
+        System.out.println("Sinus: " + sinResult);
+        System.out.println("Tangens: " + tanResult);
+
+        System.out.println("\nVýpočet zatíženého elektrického dvojbranu");
+        System.out.print("Zadejte hodnotu napětí: ");
+        double voltage = scanner.nextDouble();
+        System.out.print("Zadejte hodnotu impedance: ");
+        double impedance = scanner.nextDouble();
+
+        double current = voltage / impedance;
+        double outputVoltage = voltage - current * impedance;
+
+        System.out.println("Výstupní proud: " + String.format("%.2f", current));
+        System.out.println("Výstupní napětí: " + String.format("%.2f", outputVoltage));
+
     }
     public  void cv9(){
         fib.Init();
