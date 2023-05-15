@@ -1,14 +1,12 @@
 package cv2;
 
-import java.awt.*;
-
-class Trojuhelnik implements ITrojuhelnik {
+public class Trojuhelnik2 implements ITrojuhelnik {
     private double a;
     private double b;
     private double c;
     private IPoint souradnice;
 
-    public Trojuhelnik(double a, double b, double c, IPoint souradnice) {
+    public Trojuhelnik2(double a, double b, double c, IPoint souradnice) {
         this.a = a;
         this.b = b;
         this.c = c;

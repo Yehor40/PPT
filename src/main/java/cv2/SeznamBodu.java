@@ -2,7 +2,7 @@ package cv2;
 
 import java.awt.*;
 
-class SeznamBodu {
+public class SeznamBodu {
     private IPoint[] body;
     private int pocetBodu;
 

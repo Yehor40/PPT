@@ -16,7 +16,7 @@ public class Main {
            menu.cv1();
         break;
                 case "2":
-                    System.out.println("zatim nenaimplementovano");
+                    menu.cv2();
                     break;
             case "3":
                 menu.cv3_part1();

@@ -1,7 +1,7 @@
 package cv2;
 
 // Rozhraní třídy Point
-interface IPoint {
+ interface IPoint {
     void move(double dx, double dy);
     void movedxdy(double dx, double dy);
     String toString();
