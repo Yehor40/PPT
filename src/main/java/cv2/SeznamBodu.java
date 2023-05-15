@@ -3,15 +3,15 @@ package cv2;
 import java.awt.*;
 
 public class SeznamBodu {
-    private IPoint[] body;
+    private Point[] body;
     private int pocetBodu;
 
     public SeznamBodu(int kapacita) {
-        body = new IPoint[kapacita];
+        body = new Point[kapacita];
         pocetBodu = 0;
     }
 
-    public boolean pridatBod(IPoint bod) {
+    public boolean pridatBod(Point bod) {
         if (pocetBodu == body.length) {
             return false; // Pokud je pole plné, nelze přidat další bod
         }
@@ -28,7 +28,7 @@ public class SeznamBodu {
         return true; // Bod byl úspěšně přidán
     }
 
-    public IPoint getBod(int index) {
+    public Point getBod(int index) {
         if (index < 0  && index >= pocetBodu) {
             return null; // Neplatný index
         }

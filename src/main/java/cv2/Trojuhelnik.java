@@ -1,16 +1,12 @@
 package cv2;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 
-// Rozhraní třídy Point
- interface IPoint {
+interface ITrojuhelnik {
     void move(double dx, double dy);
     void movedxdy(double dx, double dy);
     String toString();
 }
 
-
-public class Point implements IPoint {
+public class Trojuhelnik implements ITrojuhelnik {
     private double x;
     private double y;
 
@@ -20,11 +16,6 @@ public class Point implements IPoint {
 
     public double getY() {
         return y;
-    }
-
-    public Point(double x, double y) {
-        this.x = x;
-        this.y = y;
     }
 
     public void move(double dx, double dy) {
@@ -39,15 +30,6 @@ public class Point implements IPoint {
 
     @Override
     public String toString() {
-        return "Point: x=" + x + ", y=" + y;
+        return "Trojuhelnik: x=" + x + ", y=" + y;
     }
-}
-
-
-// Testovací třída pro třídu Point
-
-
-// Testovací třída pro třídu Trojuhelnik
-class TrojuhelnikTest {
-    // Implementace testů pro třídu Trojuhelnik
 }

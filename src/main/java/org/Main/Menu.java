@@ -8,6 +8,7 @@ import cv1.Exceptions.PrazdnaNadrzException;
 import cv1.Exceptions.PrekrocenLimitException;
 import cv1.Nadrz;
 //import cv2.IPoint;
+import cv2.Point;
 import cv2.SeznamBodu;
 import cv2.Trojuhelnik2;
 import cv3.part1.Trojuhelnik;
@@ -49,35 +50,35 @@ public class Menu {
         System.out.println(""+trojuhelnikDouble1.toString());
     }
     public void cv2(){
-//        SeznamBodu seznamBodu = new SeznamBodu(5);
-//
-//        // Vytvoření bodů
-//        IPoint bod1 = new IPoint(1.0, 2.0);
-//        Point bod2 = new Point(3.0, 4.0);
-//        Point bod3 = new Point(5.0, 6.0);
-//
-//        // Přidání bodů do seznamu
-//        seznamBodu.pridatBod(bod1);
-//        seznamBodu.pridatBod(bod2);
-//        seznamBodu.pridatBod(bod3);
-//
-//        // Získání a posunutí bodu na indexu 1
-//        Point bodNaIndexu1 = seznamBodu.getBod(1);
-//        if (bodNaIndexu1 != null) {
-//            bodNaIndexu1.move(2.0, 2.0);
-//        }
-//
-//        // Posunutí všech bodů v seznamu
-//        seznamBodu.posunVsechnyBody(1.0, 1.0);
-//
-//        // Vytvoření trojúhelníku s využitím bodů
-//        Trojuhelnik2 trojuhelnik = new Trojuhelnik2(3.0, 4.0, 5.0, bod1);
-//
-//        // Posunutí trojúhelníku
-//        trojuhelnik.move(1.0, 1.0);
-//
-//        // Výpis stavu trojúhelníku
-//        System.out.println(trojuhelnik.toString());
+        SeznamBodu seznamBodu = new SeznamBodu(5);
+
+        // Vytvoření bodů
+        Point bod1 = new Point(1.0, 2.0);
+        Point bod2 = new Point(3.0, 4.0);
+        Point bod3 = new Point(5.0, 6.0);
+
+        // Přidání bodů do seznamu
+        seznamBodu.pridatBod(bod1);
+        seznamBodu.pridatBod(bod2);
+        seznamBodu.pridatBod(bod3);
+
+        // Získání a posunutí bodu na indexu 1
+        Point bodNaIndexu1 = seznamBodu.getBod(1);
+        if (bodNaIndexu1 != null) {
+            bodNaIndexu1.move(2.0, 2.0);
+        }
+
+        // Posunutí všech bodů v seznamu
+        seznamBodu.posunVsechnyBody(1.0, 1.0);
+
+        // Vytvoření trojúhelníku s využitím bodů
+        Trojuhelnik2 trojuhelnik = new Trojuhelnik2(3.0, 4.0, 5.0, bod1);
+
+        // Posunutí trojúhelníku
+        trojuhelnik.move(1.0, 1.0);
+
+        // Výpis stavu trojúhelníku
+        System.out.println(trojuhelnik.toString());
     }
     public  void cv1() {
         calcf1.calc1(6);
