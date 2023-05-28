@@ -27,7 +27,6 @@ public class Trojuhelnik {
         super.finalize();
     }
 
-
     @Override
     public boolean equals(Object o) {        
         Trojuhelnik tr2 = (Trojuhelnik) o;
@@ -39,8 +38,6 @@ public class Trojuhelnik {
         return "" + "a:" + Double.toString(a) + ";b:" + Double.toString(b) 
                 + ";c:" + Double.toString(c);
     }
-    
-
 
     public void calc_obvod_a_obsah_new() {               
     	obvod = calc_obvod();
@@ -71,10 +68,9 @@ public class Trojuhelnik {
     }
 
     public boolean is_valid() {
-        return true 
-                && Math.signum(a) > 0.0 && Math.signum(b) > 0.0 && Math.signum(c) > 0.0
-                && Double.compare(a + b, c) == 1 
-                && Double.compare(b + c, a) == 1 
+        return Math.signum(a) > 0.0 && Math.signum(b) > 0.0 && Math.signum(c) > 0.0
+                && Double.compare(a + b, c) == 1
+                && Double.compare(b + c, a) == 1
                 && Double.compare(a + c, b) == 1;   
     }
 
@@ -98,8 +94,7 @@ public class Trojuhelnik {
             return false;        
         this.c = c;
         return true;
-    }    
-
+    }
     private boolean set_all(double a, double b, double c) {        
         boolean is_set = false;
         is_set |= set_a(a);
@@ -108,9 +103,7 @@ public class Trojuhelnik {
         return is_set;
     }
 
-    public double get_a() {
-        return a;
-    }
+    public double get_a() { return a; }
 
     public double get_b() {
         return b;

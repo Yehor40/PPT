@@ -42,7 +42,7 @@ public class TrojuhelnikDouble {
     }   
 
     Trojuhelnik minObvod(Trojuhelnik tr1, Trojuhelnik tr2) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        throw new UnsupportedOperationException("Not supported yet.");
     }
  
 }

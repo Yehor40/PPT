@@ -12,32 +12,9 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author Niteo
- */
 public class TrojuhelnikTest {
-    
     public TrojuhelnikTest() {
     }
-    /*
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }*/
-
-
     /**
      * Test of equals method, of class Trojuhelnik.
      */
@@ -50,7 +27,6 @@ public class TrojuhelnikTest {
         boolean result = instance.equals(o);
         assertEquals(expResult, result);
     }
-
     /**
      * Test of toString method, of class Trojuhelnik.
      */
@@ -62,7 +38,6 @@ public class TrojuhelnikTest {
         String result = instance.toString();
         assertEquals(expResult, result);
     }
-
     /**
      * Test of calc_obvod_a_obsah method, of class Trojuhelnik.
      */

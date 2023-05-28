@@ -18,6 +18,7 @@ import cv4.KvadratickaRovnice2;
 import cv4.KvadratickaRovnice3;
 import cv6.CodeCleaner;
 import cv7.Vypocet_Histogram;
+import cv8.StudyPerformanceEvaluator;
 import cv9.CalcFibonacci;
 
 //import java.awt.*;
@@ -167,5 +168,9 @@ public class Menu {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public void cv8(String [] args) {
+        StudyPerformanceEvaluator.main(args);
     }
 }

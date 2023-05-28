@@ -5,15 +5,6 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-/**
- *
- * @author Niteo
- */
 public class CodeCleaner {
         private Scanner file;
         private PrintWriter writer;
@@ -55,5 +46,4 @@ public class CodeCleaner {
             System.out.print(ex);
         }
     }
- 
 }

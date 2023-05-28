@@ -21,26 +21,6 @@ public class TrojuhelnikDoubleTest {
     
     public TrojuhelnikDoubleTest() {
     }
-    /*
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }*/
-
-    /**
-     * Test of minObvod method, of class TrojuhelnikDouble.
-     */
     @Test
     public void testMinObvod() {
         System.out.println("minObvod");
@@ -51,10 +31,6 @@ public class TrojuhelnikDoubleTest {
         Trojuhelnik result = instance.minObvod();
         assertEquals(expResult, result);
     }
-
-    /**
-     * Test of are_equals method, of class TrojuhelnikDouble.
-     */
     @Test
     public void testAre_equals() {
         System.out.println("are_equals");        
@@ -66,10 +42,6 @@ public class TrojuhelnikDoubleTest {
         result = instance.are_equals();
         assertEquals(expResult, result);
     }
-
-    /**
-     * Test of finalize method, of class TrojuhelnikDouble.
-     */
     @Test
     public void testFinalize() throws Exception, Throwable {
         System.out.println("finalize");
@@ -78,10 +50,6 @@ public class TrojuhelnikDoubleTest {
         TrojuhelnikDouble instance = new TrojuhelnikDouble(tr1, tr2);
         instance.finalize();
     }
-
-    /**
-     * Test of toString method, of class TrojuhelnikDouble.
-     */
     @Test
     public void testToString() {
         System.out.println("toString");

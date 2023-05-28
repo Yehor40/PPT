@@ -21,22 +21,6 @@ public class TrojuhelnikTest {
     
     public TrojuhelnikTest() {
     }
-    /*
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }*/
 
     @BeforeClass
     public static void setUpClass() throws Exception {
@@ -54,10 +38,6 @@ public class TrojuhelnikTest {
     public void tearDown() throws Exception {
     }
 
-
-    /**
-     * Test of equals method, of class Trojuhelnik.
-     */
     @Test
     public void testEquals() {
         System.out.println("equals");
@@ -67,10 +47,6 @@ public class TrojuhelnikTest {
         boolean result = instance.equals(o);
         assertEquals(expResult, result);
     }
-
-    /**
-     * Test of toString method, of class Trojuhelnik.
-     */
     @Test
     public void testToString() {
         System.out.println("toString");
@@ -79,10 +55,6 @@ public class TrojuhelnikTest {
         String result = instance.toString();
         assertEquals(expResult, result);
     }
-
-    /**
-     * Test of calc_obvod_a_obsah method, of class Trojuhelnik.
-     */
     @Test
     public void testCalc_obvod_a_obsah() {
         System.out.println("calc_obvod_a_obsah");
@@ -101,9 +73,6 @@ public class TrojuhelnikTest {
         assertEquals(instance.get_obsah(), instance2.get_obsah(),0.0);
         assertEquals(instance.get_obvod(), instance2.get_obvod(),0.0);
     }
-    /**
-     * Test of calc_obvod method, of class Trojuhelnik.
-     */
     @Test
     public void testCalc_obvod() {
         System.out.println("calc_obvod");
@@ -112,10 +81,6 @@ public class TrojuhelnikTest {
         double result = instance.calc_obvod();
         assertEquals(expResult, result, 0.0);
     }
-
-    /**
-     * Test of calc_obsah method, of class Trojuhelnik.
-     */
     @Test
     public void testCalc_obsah() {
         System.out.println("calc_obsah");
@@ -128,10 +93,6 @@ public class TrojuhelnikTest {
         double result = instance.calc_obsah(obvod/2, a, b, c);
         assertEquals(expResult, result, 0.0);
     }
-
-    /**
-     * Test of get_obvod method, of class Trojuhelnik.
-     */
     @Test
     public void testGet_obvod() {
         System.out.println("get_obvod");
@@ -141,10 +102,6 @@ public class TrojuhelnikTest {
         double result = instance.get_obvod();
         assertEquals(expResult, result, 0.0);
     }
-
-    /**
-     * Test of get_obsah method, of class Trojuhelnik.
-     */
     @Test
     public void testGet_obsah() {
         System.out.println("get_obsah");
@@ -154,10 +111,6 @@ public class TrojuhelnikTest {
         double result = instance.get_obsah();
         assertEquals(expResult, result, 0.0);
     }
-
-    /**
-     * Test of is_valid method, of class Trojuhelnik.
-     */
     @Test
     public void testIs_valid() {
         System.out.println("is_valid");
@@ -166,10 +119,6 @@ public class TrojuhelnikTest {
         boolean result = instance.is_valid();
         assertEquals(expResult, result);
     }
-
-    /**
-     * Test of get_a method, of class Trojuhelnik.
-     */
     @Test
     public void testGet_a() {
         System.out.println("get_a");
@@ -178,10 +127,6 @@ public class TrojuhelnikTest {
         double result = instance.get_a();
         assertEquals(expResult, result, 0.0);        
     }
-
-    /**
-     * Test of get_b method, of class Trojuhelnik.
-     */
     @Test
     public void testGet_b() {
         System.out.println("get_b");
@@ -190,10 +135,6 @@ public class TrojuhelnikTest {
         double result = instance.get_b();
         assertEquals(expResult, result, 0.0);
     }
-
-    /**
-     * Test of get_c method, of class Trojuhelnik.
-     */
     @Test
     public void testGet_c() {
         System.out.println("get_c");
@@ -202,11 +143,6 @@ public class TrojuhelnikTest {
         double result = instance.get_c();
         assertEquals(expResult, result, 0.0);
     }
-
-    /**
-     * Test of finalize method, of class Trojuhelnik.
-     * @throws Exception
-     */
     @Test
     public void testFinalize() throws Exception, Throwable {
         System.out.println("finalize");
@@ -214,11 +150,6 @@ public class TrojuhelnikTest {
         instance.finalize();
 
     }
-
-    /**
-     * Test of setValueA method, of class Trojuhelnik.
-     * @throws Exception
-     */
     @Test
     public void testSetValueA() throws Exception {
         System.out.println("setValueA");
@@ -235,11 +166,6 @@ public class TrojuhelnikTest {
 
         assertTrue(actualMessage.contains(expectedMessage));
     }
-
-    /**
-     * Test of setValueB method, of class Trojuhelnik.
-     * @throws Exception
-     */
     @Test
     public void testSetValueB() throws Exception {
         System.out.println("setValueB");
@@ -256,11 +182,6 @@ public class TrojuhelnikTest {
 
         assertTrue(actualMessage.contains(expectedMessage));
     }
-
-    /**
-     * Test of setValueC method, of class Trojuhelnik.
-     * @throws Exception
-     */
     @Test
     public void testSetValueC() throws Exception {
         System.out.println("setValueC");

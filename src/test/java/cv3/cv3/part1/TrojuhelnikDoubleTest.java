@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit4TestClass.java to edit this template
  */
 package cv3.cv3.part1;
-
 import cv3.part1.Trojuhelnik;
 import cv3.part1.TrojuhelnikDouble;
 import org.junit.After;
@@ -12,32 +11,9 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-
-/**
- *
- * @author Niteo
- */
 public class TrojuhelnikDoubleTest {
-    
     public TrojuhelnikDoubleTest() {
     }
-    /*
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }*/
-
     /**
      * Test of minObvod method, of class TrojuhelnikDouble.
      */
@@ -51,7 +27,6 @@ public class TrojuhelnikDoubleTest {
         Trojuhelnik result = instance.minObvod();
         assertEquals(expResult, result);
     }
-
     /**
      * Test of are_equals method, of class TrojuhelnikDouble.
      */
@@ -66,7 +41,6 @@ public class TrojuhelnikDoubleTest {
         result = instance.are_equals();
         assertEquals(expResult, result);
     }
-
     /**
      * Test of finalize method, of class TrojuhelnikDouble.
      */
@@ -78,7 +52,6 @@ public class TrojuhelnikDoubleTest {
         TrojuhelnikDouble instance = new TrojuhelnikDouble(tr1, tr2);
         instance.finalize();
     }
-
     /**
      * Test of toString method, of class TrojuhelnikDouble.
      */

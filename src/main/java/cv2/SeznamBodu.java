@@ -1,7 +1,5 @@
 package cv2;
 
-import java.awt.*;
-
 public class SeznamBodu {
     private Point[] body;
     private int pocetBodu;
@@ -22,7 +20,6 @@ public class SeznamBodu {
                 return false; // Bod se stejnými souřadnicemi již existuje, nelze ho přidat
             }
         }
-
         body[pocetBodu] = bod;
         pocetBodu++;
         return true; // Bod byl úspěšně přidán

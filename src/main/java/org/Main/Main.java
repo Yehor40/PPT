@@ -40,7 +40,7 @@ public class Main {
                menu.cv7();
                 break;
             case "8":
-                System.out.println("zatim nenaimplementovano");
+              menu.cv8(args);
                 break;
             case "9":
                 menu.cv9();
